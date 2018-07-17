@@ -44,6 +44,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 30px;
 }
 
+.row1{
+  margin-bottom: 10px;
+}
+
 .row.nomargin, .row-fluid.nomargin {
     margin-bottom: 0;
 }
@@ -443,13 +447,15 @@ select.selectmenu {
     text-align: center;
     color: #26AFF0;
     display: inline-table;
-    width: 70px;
+    width: 200px;
     height: 70px;
     -ms-border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 0;
-    font-size: 42px;
+    font-size: 35px;
+    line-height: 35px;
+    font-family: Arial;
     border: 1px solid #26AFF0;
 }
 
