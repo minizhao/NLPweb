@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <!-- css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+    <link href="css/jcarousel.css" rel="stylesheet"/>
+    <link href="css/flexslider.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/demo.css" rel="stylesheet"/>
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+</head>
+<body>
+<div id="wrapper">
+
+    <!-- start header -->
+    <header>
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo"/></a>
+                </div>
+                <div class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">语言处理基础技术</a></li>
+                        <li class="active"><a href="emotion.html">文本情感分析</a></li>
+                        <li><a href="summary.html">文本摘要生成</a></li>
+                        <li><a href="comprehension.html">机器阅读理解</a></li>
+                        <li><a href="dialogue.html">对话系统</a></li>
+                        <li><a href="relation.html">实体关系抽取</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header><!-- end header -->
+    <section id="inner-headline">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="pageTitle">文本情感分析</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="content">
+        <div class="container">
+
+            <div class="about">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="about-logo">
+                            <h3>功能介绍 </h3>
+                            <p>所谓的机器阅读理解，基本概念跟学术考试时做的阅读理解题很相似，同样都是给出一段材料和问题，让“考生”给出正确答案。所不同的，仅仅是机器阅读理解的主角变成了AI模型而已。</p>
+                            <p>其实机器阅读理解这项技术，从来都不是纸上谈兵的“象牙塔派”，在我们已经熟悉的互联网应用中，就有大量只能依靠机器阅读理解来解决的难题。</p>
+                            <p>
+                                当用户在搜索引擎寻找答案的时候，传统方案只能依靠用户互助来回答，正确性和效率都严重不足。但智能体进行回答，就不能只依靠关键词填空来处理。比如绝不会有用户提问“（）是我国最长的河流？”；更多情况用户会询问复杂的问题，需要完整的解决方案和建议。那么，从真实提问数据中学习理解材料、回答问题的方案，近乎于AI技术满足搜索引擎体验升级的唯一出路。</p>
+                        </div>
+
+                    </div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="img/section-image-1.png" alt="">
+                        <div class="space"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <p>今日头条最近反复出状况，很大程度来源于舆论指责其过度依赖关键词进行算法推荐，忽略了用户的对文章深度与知识性的需求。造成这种情况的原因之一，就在于算法的机器阅读理解能力不够，无法阅读真实的互联网材料，给出个性化的推荐结果。</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-arrow-circle-right pr-10 colored"></i> 传统方案只能依靠用户互助来回答
+                            </li>
+                            <li><i class="fa fa-arrow-circle-right pr-10 colored"></i> 用户在搜索引擎寻找答案的时候，传统方案只能依靠用户互助来回答
+                            </li>
+                            <li><i class="fa fa-arrow-circle-right pr-10 colored"></i> 依靠机器阅读理解来解决的难题
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h3><span>在线试用</span></h3>
+            <div class="pane-container">
+                <div class="pane model">
+                    <div class="pane__left model__input">
+                        <div class="model__content">
+                            <div class="model__content">
+
+                                <div class="form__field">
+                                    <label for="input-weiboContent">文章内容</label>
+                                    <textarea id="input-weiboContent" type="text"> "太没道德了，现在的社会真的已经无药可救了么？起因都是一个贫富差距、如果大家生活都可以进入小康，那也不会有人稀罕这些钱了。旋转陀螺陪伴童年，所有的回忆只有珍藏。  我正在使用"陀螺"封面图，好漂亮，你们都快来试试！http://t.cn/8F7Owmy我知道此时此刻你们在想些什么东西，我的生活与你何干！每个人有每个人成功的途径，每个人有每个人独一无二的幸福，每个人有每个人心里的best love.你何苦操那么多跟你无关的心！我的幸福很简单，看着我的薰衣草茁壮成长，一家人可以团聚就是我最大的幸福。我刚刚发了一条#啪啪#，点开听听[音乐] http://t.cn/8FqNFaB ▶ (来自@啪啪)
+                                "
+                                </textarea>
+                                </div>
+
+
+                                <div class="form__field">
+                                    <label for="input-tags">问题</label>
+                                    <input type="text" id="input-tags" type="text" value="辟谣联盟 神马都是浮云 微春晚 耽美">
+                                </div>
+
+
+                                <div class="form__field form__field--btn">
+                                    <button type="button" class="btn btn--icon-disclosure" onclick="predict()">Predict
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pane__right model__output model__output--empty">
+                        <div class="pane__thumb"></div>
+                        <div class="model__content">
+                            <div id="output" class="output">
+                                <div class="placeholder">
+                                    <div class="placeholder__content">
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <p>Run model to view results</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="widget">
+                        <h5 class="widgetheading">Our Contact</h5>
+                        <address>
+                            <strong>Pixelcompany Inc</strong><br>
+                            JC Main Road, Near Silnile tower<br>
+                            Pin-21542 NewYork US.
+                        </address>
+                        <p>
+                            <i class="icon-phone"></i> (123) 456-789 - 1255-12584 <br>
+                            <i class="icon-envelope-alt"></i> email@domainname.com
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="widget">
+                        <h5 class="widgetheading">Quick Links</h5>
+                        <ul class="link-list">
+                            <li><a href="#">Latest Events</a></li>
+                            <li><a href="#">Terms and conditions</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Career</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="widget">
+                        <h5 class="widgetheading">Latest posts</h5>
+                        <ul class="link-list">
+                            <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+                            <li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
+                            <li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="widget">
+                        <h5 class="widgetheading">Recent News</h5>
+                        <ul class="link-list">
+                            <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+                            <li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
+                            <li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sub-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="copyright">
+                            <p>
+                                Copyright &copy; 2016.Company name All rights reserved.More Templates <a
+                                    href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from
+                                <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul class="social-network">
+                            <li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="#" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+                            </li>
+                            <li><a href="#" data-placement="top" title="Google plus"><i
+                                    class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+<!-- javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.fancybox-media.js"></script>
+<script src="js/portfolio/jquery.quicksand.js"></script>
+<script src="js/portfolio/setting.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/custom.js"></script>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.js"></script>
+<script>
+    function predict() {
+
+
+        var quotedFieldList = ['weiboContent','tags'];
+        var data = "";
+        quotedFieldList.forEach(function(fieldName) {
+            data+= fieldName+'='+document.getElementById("input-" + fieldName).value+'&';
+        })
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', '/reading');
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.onload = function() {
+            if (xhr.status == 200) {
+                alert("aaa");
+                // If you want a more impressive visualization than just
+                // outputting the raw JSON, change this part of the code.
+                var htmlResults = "<pre>" + xhr.responseText + "</pre>";
+
+                document.getElementById("output").innerHTML = htmlResults;
+            }
+        };
+
+        xhr.send(data);
+    }
+</script>
+</html>

@@ -16,18 +16,19 @@ public class ModelController {
     @PostMapping("reading")
     public String reading(HttpServletRequest request, HttpServletResponse response) throws IOException, InterruptedException {
         String question = request.getParameter("weiboContent");
-        String[] cmdArr = new String[] {"D:\\ProgramData\\Anaconda3\\python", "F:\\untitled.py", question};
+        String[] cmdArr = new String[] {"/home/lab713/anaconda3/bin/python", "/home/lab713/data1/git_code/NLPweb/python_lib/untitled.py", question};
         Process pr = Runtime.getRuntime().exec(cmdArr);
         BufferedReader in = new BufferedReader(new InputStreamReader(
                 pr.getInputStream()));
-        String line;
-        while ((line = in.readLine()) != null) {
-            System.out.println(line);
+        String line="";
+        String c;
+        while ((c = in.readLine()) != null) {
+            line+=c;
         }
         in.close();
         pr.waitFor();
         System.out.println("end");
-        return question;
+        return line;
     }
 }
 
